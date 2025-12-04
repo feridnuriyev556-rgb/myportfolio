@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -29,10 +28,9 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
     padding-bottom: 3px;
-    transition: 0.3s;
     border-bottom: 2px solid transparent;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -40,14 +38,13 @@ nav a:hover {
     border-bottom: 2px solid #00aaff;
 }
 
-/* Content Container */
+/* Container */
 .container {
     max-width: 900px;
     margin: 60px auto;
-    padding: 0 25px;
-    background: white;
+    background: #fff;
+    padding: 40px;
     border-radius: 12px;
-    padding: 45px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
@@ -55,16 +52,12 @@ nav a:hover {
 h1 {
     font-size: 40px;
     margin-bottom: 20px;
-    font-weight: 700;
-    color: #000;
 }
 
 h2 {
-    margin-top: 35px;
-    font-size: 27px;
-    font-weight: 600;
-    color: #333;
-    padding-bottom: 5px;
+    font-size: 26px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     border-left: 4px solid #00aaff;
     padding-left: 10px;
 }
@@ -76,71 +69,24 @@ p {
     color: #444;
 }
 
-/* Skills List */
 ul {
-    margin-top: 12px;
     padding-left: 25px;
 }
 
 ul li {
-    margin-bottom: 10px;
     font-size: 17px;
+    margin-bottom: 8px;
 }
 
-/* Smooth animation */
-.container, nav a {
-    transition: all 0.3s ease-in-out;
-}
-
-/* ---- Responsive Design ---- */
-@media (max-width: 768px) {
-    nav {
-        gap: 18px;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
-
-    .container {
-        margin: 30px auto;
-        padding: 30px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    p, ul li {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-
-    /* Blog Cards */
+/* Blog Cards */
 .blog {
-    background: #ffffff;
+    background: white;
     padding: 25px;
-    margin: 20px 0;
     border-radius: 12px;
+    margin: 15px 0;
+    border-left: 4px solid #00aaff;
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     transition: 0.3s;
-    border-left: 4px solid #00aaff;
 }
 
 .blog:hover {
@@ -148,36 +94,49 @@ ul li {
     box-shadow: 0 10px 35px rgba(0,0,0,0.12);
 }
 
-.blog h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #111;
+/* Project Cards */
+.project {
+    background: white;
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border-left: 4px solid #00aaff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-.blog p {
-    font-size: 17px;
-    color: #555;
-    line-height: 1.6;
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
 }
 
-/* Mobile Blog */
-@media (max-width: 480px) {
-    .blog {
-        padding: 18px;
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
     }
-
-    .blog h2 {
-        font-size: 20px;
-    }
-
-    .blog p {
-        font-size: 15px;
-    }
-}
-
 
     .container {
-        padding: 22px;
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 32px;
     }
 }
 
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
