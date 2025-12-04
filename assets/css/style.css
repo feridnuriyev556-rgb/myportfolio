@@ -131,7 +131,53 @@ ul li {
         font-size: 28px;
     }
 
+
+    /* Blog Cards */
+.blog {
+    background: #ffffff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-left: 4px solid #00aaff;
+}
+
+.blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+.blog h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.blog p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Mobile Blog */
+@media (max-width: 480px) {
+    .blog {
+        padding: 18px;
+    }
+
+    .blog h2 {
+        font-size: 20px;
+    }
+
+    .blog p {
+        font-size: 15px;
+    }
+}
+
+
     .container {
         padding: 22px;
     }
 }
+
